@@ -11,9 +11,7 @@ allow cpboot-daemon self:capability { setuid setgid };
 
 allow cpboot-daemon cpboot-daemon:capability dac_override;
 
-# FIXME neverallow rule
 # allow cpboot-daemon self:
-capability mknod;
 allow cpboot-daemon kernel:system syslog_read;
 allow cpboot-daemon cgroup:dir create_dir_perms;
 
