@@ -25,27 +25,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiDoze
 
+# libinit
 PRODUCT_PACKAGES += \
-   libinit_a3y17lte \
-   libbauthtzcommon_shim \
-   mcDriverDaemon \
-   FlipFlap \
-   libtfa98xx \
-   audio_amplifier.universal7870 \
-   libtinycompress \
-   fingerprint.exynos5 \
-   libbauthtzcommon_shim \
-   android.hardware.biometrics.fingerprint@2.1-impl \
-   android.hardware.biometrics.fingerprint@2.1-service \
-   lights.universal7870 \
-   android.hardware.light@2.0-impl \
-   AdvancedDisplay \
-   android.hardware.nfc@1.0-impl \
-   libnfc-nci \
-   libnfc_nci_jni \
-   com.android.nfc_extras \
-   NfcNci \
-   Tag \
+   libinit_a3y17lte
+
+# mcDriverDaemon
+PRODUCT_PACKAGES += \
+   mcDriverDaemon
+
+# Flipflap
+PRODUCT_PACKAGES += \
+   FlipFlap
+
+# Advanced display
+PRODUCT_PACKAGES += \
+   AdvancedDisplay
+
+# wifi
+PRODUCT_PACKAGES += \
    hostapd \
    libqsap_sdk \
    libQWiFiSoftApCfg \
@@ -53,34 +50,9 @@ PRODUCT_PACKAGES += \
    wpa_supplicant \
    wpa_supplicant.conf \
    wificond \
-   android.hardware.wifi@1.0-service
-   
-PRODUCT_PACKAGES += \
-   FlipFlap \
-   libtfa98xx \
-   audio_amplifier.universal7870 \
-   libtinycompress \
-   mcDriverDaemon \
-   fingerprint.exynos5 \
-   libbauthtzcommon_shim \
-   android.hardware.biometrics.fingerprint@2.1-impl \
-   android.hardware.biometrics.fingerprint@2.1-service \
-   lights.universal7870 \
-   android.hardware.light@2.0-impl \
-   AdvancedDisplay \
-   android.hardware.nfc@1.0-impl \
-   libnfc-nci \
-   libnfc_nci_jni \
-   com.android.nfc_extras \
-   NfcNci \
-   Tag \
-   Snap \
    android.hardware.wifi@1.0 \
    android.hardware.wifi@1.0-impl \
    android.hardware.wifi@1.0-service \
-   hostapd \
-   libqsap_sdk \
-   libQWiFiSoftApCfg \
    libwpa_client \
    wificond \
    wifilogd \
@@ -103,6 +75,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/a2dp_audio_policy_configuration.xml:system/vendor/etc/a2dp_audio_policy_configuration.xml \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:/system/vendor/etc/audio_effects.xml
+
+# audio amp
+PRODUCT_PACKAGES += \
+   libtfa98xx \
+   audio_amplifier.universal7870
 
 # Bluetooth
 PRODUCT_PACKAGES += \
