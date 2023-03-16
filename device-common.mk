@@ -123,6 +123,35 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.mapper@2.0-impl
 
+PRODUCT_PACKAGES += \
+    libion \
+    libfimg
+
+PRODUCT_PACKAGES += \
+	libstlport
+
+# BSP
+PRODUCT_PACKAGES += \
+    hwcomposer.exynos5 \
+    gralloc.exynos5 \
+    memtrack.exynos5 \
+    libcsc \
+    libexynosdisplay \
+    libexynosgscaler \
+    libExynosHWCService \
+    libexynosscaler \
+    libexynosutils \
+    libexynosv4l2 \
+    libfimg \
+    libhdmi \
+    libhwcutils \
+    libhwjpeg \
+    libion_exynos \
+    libmpp \
+    libstagefrighthw \
+    libvirtualdisplay
+
+
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -155,10 +184,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
-
-PRODUCT_PACKAGES += \
-    libion \
-    libfimg
 
 # Omx Shims
 PRODUCT_PACKAGES  += \
